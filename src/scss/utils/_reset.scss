@@ -75,7 +75,7 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
+  padding: 0 16px;
 
   //   Mobile
   @include media(mobile) {
@@ -85,6 +85,7 @@ img {
   // Desktop
   @include media(desktop) {
     width: $desktop;
+    padding: 0 40px;
   }
 }
 

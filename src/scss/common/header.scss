@@ -18,6 +18,7 @@
   letter-spacing: 0.02em;
   @include font(30, 40);
   color: $text_color;
+  transition: $transition;
 }
 
 .nav-link:hover,
