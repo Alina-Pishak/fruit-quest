@@ -1,7 +1,3 @@
-.header {
-  padding: 20px 0;
-}
-
 .nav-list {
   display: flex;
   align-items: center;
@@ -21,10 +17,10 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   @include font(30, 40);
-  color: $_header_color;
+  color: $text_color;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: $_header_accent_color;
+  color: $hover_color;
 }
