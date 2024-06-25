@@ -22,11 +22,19 @@
     width: 24px;
     height: 24px;
     border: none;
+    fill: $text-color;
+    transition: $transition;
+    &:hover {
+      fill: $hover_color;
+    }
+    &:focus {
+      fill: $focus_color;
+    }
     @include media(desktop) {
       display: none;
     }
     &__icon {
-      fill: $text-color;
+      fill: inherit;
     }
   }
   &__logo {
@@ -38,7 +46,7 @@
     cursor: pointer;
     transition: $transition;
     &:hover {
-      color: $focus_color;
+      color: $hover_color;
     }
     &:focus {
       color: $focus_color;
@@ -48,11 +56,11 @@
       width: 239px;
     }
     &__img {
-      width: 40px;
-      height: 40px;
+      width: 100%;
+      height: auto;
+      max-width: 40px;
       @include media(desktop) {
-        width: 64px;
-        height: 64px;
+        max-width: 64px;
       }
     }
     &__text {
@@ -78,8 +86,13 @@
   display: flex;
   gap: 16px;
   align-items: start;
+  transition: $transition;
+  visibility: visible;
   &__close__button {
     transform: rotate(90deg);
+    &:hover {
+      fill: $focus_color;
+    }
   }
   &__nav__list {
     width: 110px;
@@ -88,11 +101,24 @@
       border-bottom: 1px solid $text-color;
       margin-bottom: 8px;
     }
+    &__link {
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: 12px;
+      color: $black_color;
+      transition: $transition;
+      &:hover {
+        color: $_header_color;
+      }
+      &:focus {
+        color: $_header_color;
+      }
+    }
   }
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
   opacity: 0;
   transition: $transition;
 }
