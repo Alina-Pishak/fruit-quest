@@ -1,0 +1,54 @@
+.google_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  width: 148px;
+  height: 44px;
+  padding: 6px 10px;
+
+  background-color: $text_color;
+  border: 1px solid $black_color;
+  border-radius: 5px;
+
+  transition: all $transition;
+
+  &__icon {
+    width: 26px;
+    height: 28px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &--play,
+    &--get {
+      fill: $black_color;
+      transition: fill $transition;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $black_color;
+    border: 1px solid $text_color;
+
+    .google_logo__text--play,
+    .google_logo__text--get {
+      fill: $text_color;
+    }
+  }
+
+  &:focus {
+    border: 1px solid $black_color;
+  }
+
+  &:disabled {
+    background-color: $disabled_color;
+    border: 1px solid $disabled_color;
+    cursor: not-allowed;
+  }
+}
