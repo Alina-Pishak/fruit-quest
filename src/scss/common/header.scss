@@ -1,14 +1,30 @@
 .header {
+  position: relative;
   padding-top: 12px;
   padding-bottom: 12px;
   display: flex;
   gap: 37px;
   align-items: center;
+  @include media(desktop) {
+    gap: 0;
+    justify-content: space-between;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  &__navigation {
+    display: none;
+    @include media(desktop) {
+      display: block;
+    }
+  }
   &__button {
     background: none;
     width: 24px;
     height: 24px;
     border: none;
+    @include media(desktop) {
+      display: none;
+    }
     &__icon {
       fill: $text-color;
     }
@@ -18,38 +34,69 @@
     display: flex;
     gap: 16px;
     align-items: center;
-
+    color: $text_color;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+      color: $focus_color;
+    }
+    &:focus {
+      color: $focus_color;
+    }
+    @include media(desktop) {
+      gap: 27px;
+      width: 239px;
+    }
     &__img {
       width: 40px;
       height: 40px;
+      @include media(desktop) {
+        width: 64px;
+        height: 64px;
+      }
     }
     &__text {
       font-family: $accent-font;
       font-size: 12px;
       letter-spacing: 0.01em;
-      color: $text_color;
+      color: inherit;
+      @include media(desktop) {
+        font-size: 18px;
+      }
     }
   }
 }
 
 .mobile__menu {
   background: $hover_color;
-  // display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 1;
   padding: 20px 16px 32px 16px;
-    width: 182px;
-    height: 222px;
-display: flex;
-gap: 16px;
-align-items: start;
+  width: 182px;
+  display: flex;
+  gap: 16px;
+  align-items: start;
   &__close__button {
     transform: rotate(90deg);
   }
   &__nav__list {
     width: 110px;
-  &__item{
-    padding-bottom: 8px;
-    text-decoration: solid;
-    text-decoration-color: $text-color;
+    &__item:not(:last-child) {
+      padding-bottom: 8px;
+      border-bottom: 1px solid $text-color;
+      margin-bottom: 8px;
+    }
   }
-  }
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  transition: $transition;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
