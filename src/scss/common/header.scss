@@ -11,67 +11,73 @@
     padding-top: 26px;
     padding-bottom: 26px;
   }
-  &__navigation {
+}
+
+.header__navigation {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}
+
+.header__button {
+  background: none;
+  width: 24px;
+  height: 24px;
+  border: none;
+  fill: $text_color;
+  transition: $transition;
+  &:hover {
+    fill: $hover_color;
+  }
+  &:focus {
+    fill: $focus_color;
+  }
+  @include media(desktop) {
     display: none;
-    @include media(desktop) {
-      display: block;
-    }
   }
-  &__button {
-    background: none;
-    width: 24px;
-    height: 24px;
-    border: none;
-    fill: $text-color;
-    transition: $transition;
-    &:hover {
-      fill: $hover_color;
-    }
-    &:focus {
-      fill: $focus_color;
-    }
-    @include media(desktop) {
-      display: none;
-    }
-    &__icon {
-      fill: inherit;
-    }
+}
+
+.header__button__icon {
+  fill: inherit;
+}
+
+.header__logo {
+  width: 166px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: $text_color;
+  cursor: pointer;
+  transition: $transition;
+  &:hover {
+    color: $hover_color;
   }
-  &__logo {
-    width: 166px;
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    color: $text_color;
-    cursor: pointer;
-    transition: $transition;
-    &:hover {
-      color: $hover_color;
-    }
-    &:focus {
-      color: $focus_color;
-    }
-    @include media(desktop) {
-      gap: 27px;
-      width: 239px;
-    }
-    &__img {
-      width: 100%;
-      height: auto;
-      max-width: 40px;
-      @include media(desktop) {
-        max-width: 64px;
-      }
-    }
-    &__text {
-      font-family: $accent-font;
-      font-size: 12px;
-      letter-spacing: 0.01em;
-      color: inherit;
-      @include media(desktop) {
-        font-size: 18px;
-      }
-    }
+  &:focus {
+    color: $focus_color;
+  }
+  @include media(desktop) {
+    gap: 27px;
+    width: 239px;
+  }
+}
+
+.header__logo__img {
+  width: 100%;
+  height: auto;
+  max-width: 40px;
+  @include media(desktop) {
+    max-width: 64px;
+  }
+}
+
+.header__logo__text {
+  font-family: $accent-font;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: inherit;
+  @include media(desktop) {
+    font-size: 18px;
   }
 }
 
@@ -88,39 +94,43 @@
   align-items: start;
   transition: $transition;
   visibility: visible;
-  &__close__button {
-    transform: rotate(90deg);
-    &:hover {
-      fill: $focus_color;
-    }
+}
+
+.mobile__menu__close__button {
+  transform: rotate(90deg);
+  &:hover {
+    fill: $focus_color;
   }
-  &__nav__list {
-    width: 110px;
-    &__item:not(:last-child) {
-      padding-bottom: 8px;
-      border-bottom: 1px solid $text-color;
-      margin-bottom: 8px;
-    }
-    &__link {
-      font-family: $primary-font;
-      font-weight: 500;
-      font-size: 12px;
-      color: $black_color;
-      transition: $transition;
-      &:hover {
-        color: $_header_color;
-      }
-      &:focus {
-        color: $_header_color;
-      }
-    }
+}
+
+.mobile__menu__nav__list {
+  width: 110px;
+}
+
+.mobile__menu__nav__list__item:not(:last-child) {
+  padding-bottom: 8px;
+  border-bottom: 1px solid $text_color;
+  margin-bottom: 8px;
+}
+
+.mobile__menu__nav__list__link {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  color: $black_color;
+  transition: opacity $transition;
+  &:hover {
+    color: $bg_color;
+  }
+  &:focus {
+    color: $bg_color;
   }
 }
 
 .hidden {
   visibility: hidden;
   opacity: 0;
-  transition: $transition;
+  transition: opacity $transition;
 }
 
 .overflow-hidden {
