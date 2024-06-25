@@ -32,9 +32,9 @@ html {
 }
 
 *,
-*::before,
-*::after {
-  box-sizing: inherit;
+*:after,
+*:before {
+  box-sizing: border-box;
 }
 
 body {
