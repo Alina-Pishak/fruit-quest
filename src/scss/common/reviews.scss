@@ -52,6 +52,11 @@
   background-color: $hover_color;
   border-radius: 0;
   cursor: pointer;
+  transition: background-color $transition;
+
+  &:hover {
+    background-color: $focus_color;
+  }
 }
 
 .swiper__pagination .swiper-pagination-bullet-active {
