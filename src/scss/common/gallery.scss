@@ -24,6 +24,10 @@
   height: 5px;
   background-color: $hover_color;
   cursor: pointer;
+
+  &:hover{
+    background-color: $focus_color;
+  }
   @include media(desktop) {
     width: 40px;
   }
@@ -42,11 +46,9 @@
     z-index: 10;
     cursor: pointer;
     fill: $text_color;
-
     &:hover {
       fill: $hover_color;
     }
-
     &:focus {
       fill: $focus_color;
     }

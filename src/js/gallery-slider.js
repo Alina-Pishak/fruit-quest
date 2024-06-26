@@ -21,7 +21,7 @@ renderMarkupSlider(gallery);
 
 const swiper = new Swiper('.swiper', {
   loop: true,
-  spaceBetween: 10,
+  spaceBetween: 24,
   pagination: {
     el: '.swiper-pagination-custom',
     clickable: true,
@@ -36,7 +36,6 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
     1440: {
       slidesPerView: 4,
-      spaceBetween: 24,
     },
   },
   modules: [Navigation, Pagination],
