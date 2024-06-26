@@ -21,12 +21,3 @@ mobileMenu.addEventListener('click', e => {
     toggleMobileMenu();
   }
 });
-
-document.addEventListener('click', event => {
-  if (
-    !mobileMenu.contains(event.target) &&
-    !openMenuBtn.contains(event.target)
-  ) {
-    toggleMobileMenu();
-  }
-});
