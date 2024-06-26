@@ -4,7 +4,7 @@
   max-width: 288px;
 }
 
-.swiper-slide {
+.gallery__swiper__slide {
   border-radius: 16px;
 }
 
@@ -69,8 +69,6 @@
     right: -80px;
   }
 }
-   .swiper-container-wrapper {
-       position: relative;
-    //    padding: 0 80px;
-       /* Відступи для навігаційних кнопок */
-   }
+.swiper-container-wrapper {
+  position: relative;
+}

@@ -1,9 +1,23 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import gallery from '../data/gallery.json';
+
+const sliderEl = document.querySelector('.gallery__swiper__wrapper');
+
+const renderMarkupSlider = gallery => {
+  const markup = gallery
+    .map(({ src, srcset, alt }) => {
+      return `
+         <div class="swiper-slide gallery__swiper__slide">
+            <img src=${src} srcset=${srcset} alt=${alt} class="gallery__slide__img" />
+        </div>`;
+    })
+    .join('');
+  sliderEl.insertAdjacentHTML('beforeend', markup);
+};
+
+renderMarkupSlider(gallery);
 
 const swiper = new Swiper('.swiper', {
   loop: true,
