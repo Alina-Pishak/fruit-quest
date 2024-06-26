@@ -12,7 +12,6 @@
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.01em;
-  color: $text_color;
   margin-bottom: 16px;
   @include media(desktop) {
     font-size: 32px;
@@ -21,10 +20,6 @@
 }
 
 .conditions__text {
-  font-family: $primary-font;
-  font-weight: 500;
-  font-size: 18px;
-  color: $text_color;
   &:uppercase {
     text-transform: uppercase;
   }
