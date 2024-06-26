@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "img": "../../img/pear_1x.webp",
+    "srcset": "../../img/pear_1x.webp 1x, ../../img/pear_2x.webp 2x",
+    "alt": "photo of a pear",
+    "text": "Match Fruits: Line up three or more identical fruits to clear them from the board."
+  },
+  {
+    "id": 2,
+    "img": "../../img/blueberry_1x.webp",
+    "srcset": "../../img/blueberry_1x.webp 1x, ../../img/blueberry_2x.webp 2x",
+    "alt": "photo of a blueberry",
+    "text": "Use Power-ups: Boost your gameplay with unique power-ups like the Fruit Bomb."
+  },
+  {
+    "id": 3,
+    "img": "../../img/tangerine_1x.webp",
+    "srcset": "../../img/tangerine_1x.webp 1x, ../../img/tangerine_2x.webp 2x",
+    "alt": "photo of a tangerine",
+    "text": "Achieve Goals: Each level has specific objectives to accomplish within limited moves."
+  },
+  {
+    "id": 4,
+    "img": "../../img/blueberry_1x.webp",
+    "srcset": "../../img/blueberry_1x.webp 1x, ../../img/blueberry_2x.webp 2x",
+    "alt": "photo of a blueberry",
+    "text": "Unlock Levels: Progress through levels and unlock new and exciting challenges."
+  },
+  {
+    "id": 5,
+    "img": "../../img/pear_1x.webp",
+    "srcset": "../../img/pear_1x.webp 1x, ../../img/pear_2x.webp 2x",
+    "alt": "photo of a pear",
+    "text": "Compete with Friends: Connect to social media to see how your scores stack up against your friends’."
+  }
+]

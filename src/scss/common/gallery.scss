@@ -1,0 +1,77 @@
+.gallery__slide__img {
+  width: 100%;
+  height: auto;
+  max-width: 288px;
+}
+
+.gallery__swiper__slide {
+  border-radius: 16px;
+}
+
+.swiper-pagination-custom {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 24px;
+  @include media(desktop) {
+    gap: 16px;
+    margin-top: 40px;
+  }
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 20px;
+  height: 5px;
+  background-color: $hover_color;
+  cursor: pointer;
+
+  &:hover{
+    background-color: $focus_color;
+  }
+  @include media(desktop) {
+    width: 40px;
+  }
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+  background-color: $black-color;
+}
+
+.swiper-button-custom {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+    cursor: pointer;
+    fill: $text_color;
+    &:hover {
+      fill: $hover_color;
+    }
+    &:focus {
+      fill: $focus_color;
+    }
+  }
+}
+
+.swiper-chevron {
+  fill: inherit;
+}
+
+.swiper-button-custom-prev {
+  @include media(desktop) {
+    left: -80px;
+    transform: rotate(180deg);
+  }
+}
+
+.swiper-button-custom-next {
+  @include media(desktop) {
+    right: -80px;
+  }
+}
+.swiper-container-wrapper {
+  position: relative;
+}

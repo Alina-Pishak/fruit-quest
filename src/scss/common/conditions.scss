@@ -1,0 +1,29 @@
+.conditions__text__wrapper {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.conditions__title {
+  font-family: $accent-font;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
+  @include media(desktop) {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
+
+.conditions__text {
+  &:uppercase {
+    text-transform: uppercase;
+  }
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}

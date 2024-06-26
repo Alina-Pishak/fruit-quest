@@ -1,0 +1,23 @@
+// font
+$primary-font: 'Inter', sans-serif;
+$accent-font: 'Alfa Slab One', serif;
+
+// colors
+$text_color: #f5f5f5;
+$hover_color: #aab6ff;
+$focus_color: #161d4a;
+$black_color: #080808;
+$disabled_color: #7a7a7a;
+
+$bg_color: #4e65ef;
+$bg_linear_color: linear-gradient(
+  180deg,
+  #6372d3 0%,
+  #3f53cd 31.08%,
+  #2d3b92 75%,
+  #27358d 87.5%,
+  #293686 100%
+);
+
+// other
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

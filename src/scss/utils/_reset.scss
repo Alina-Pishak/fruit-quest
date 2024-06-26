@@ -1,0 +1,138 @@
+@import './breakpoints';
+
+/* Reset styles */
+
+:root {
+  font-family: $primary-font;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: normal;
+  font-style: normal;
+  font-variation-settings: 'slnt' 0;
+
+  color: $text_color;
+  background: $bg_linear_color;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+
+  //   Mobile
+  @include media(mobile) {
+    width: $mobile;
+  }
+
+  // Desktop
+  @include media(desktop) {
+    width: $desktop;
+    padding: 0 120px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__title {
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 0.28px;
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    &.title {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    &.title.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    // Desktop
+    @include media(desktop) {
+      font-size: 48px;
+      letter-spacing: 0.48px;
+
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
