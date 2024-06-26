@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "author": "BerryLover101",
+        "img": "../../img/reviews-avatar-1_1x.webp",
+        "img_retina": "../../img/reviews-avatar-1_2x.webp",
+        "text": "\"So refreshing and fun! Each level feels like a new fruit basket to explore.\""
+    },
+    {
+        "id": 2,
+        "author": "CitrusTwist",
+        "img": "../../img/reviews-avatar-2_1x.webp",
+        "img_retina": "../../img/reviews-avatar-2_2x.webp",
+        "text": "\"I can't stop playing! It's the perfect blend of challenge and chill.\""
+    },
+    {
+        "id": 3,
+        "author": "AppleAce",
+        "img": "../../img/reviews-avatar-3_1x.webp",
+        "img_retina": "../../img/reviews-avatar-3_2x.webp",
+        "text": "\"The power-ups are super cool! Love the graphics too.\""
+    },
+    {
+        "id": 4,
+        "author": "MelonMixer",
+        "img": "../../img/reviews-avatar-4_1x.webp",
+        "img_retina": "../../img/reviews-avatar-4_2x.webp",
+        "text": "\"Great game for fruit puzzle lovers. It’s engaging and really makes you think!\""
+    }
+]

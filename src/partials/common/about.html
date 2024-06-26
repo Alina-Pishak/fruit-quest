@@ -1,0 +1,43 @@
+<section class="section about" id="about">
+  <div class="container">
+    <h2 class="section__title about__title">About This Game</h2>
+
+    <div class="about__content">
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ../../img/about-desktop_1x.webp 1x,
+            ../../img/about-desktop_2x.webp 2x
+          "
+        />
+        <source
+          media="(max-width: 1279px)"
+          srcset="
+            ../../img/about-mobile_1x.webp 1x,
+            ../../img/about-mobile_2x.webp 2x
+          "
+        />
+        <img
+          src="../../img/about-mobile_1x.webp"
+          alt="Game Logo"
+          width="288"
+          class="about__img"
+        />
+      </picture>
+
+      <div class="about_description">
+        <p class="about_text">
+          Fruit Punch is an exhilarating match-3 puzzle game that invites you to
+          a vibrant world filled with delicious fruit puzzles. Players match
+          colorful fruits to complete the levels with specific goals and limited
+          moves.
+        </p>
+
+        <div class="about_link">
+          <load ="partials/ui/button.html" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
