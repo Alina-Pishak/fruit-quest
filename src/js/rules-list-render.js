@@ -4,14 +4,15 @@ const rulesEl = document.querySelector('.rules__list');
 
 const renderMarkup = rules => {
   const markup = rules
-    .map(({ id, img, img_retina, alt, text }) => {
+    .map(({ img, srcset, alt, text }) => {
       return `
         <li class="rules__item">
           <img
-            srcset="${img} 1x, ${img_retina} 2x"
+            srcset="${srcset}"
             src="${img}"
             alt="${alt}"
             width="40"
+            height="40"
             class="rules__img"
           />
           <p class="rules__point">${text}</p>

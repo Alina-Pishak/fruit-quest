@@ -10,18 +10,16 @@ const sliderEl = document.querySelector('.reviews__wrapper');
 
 const renderMarkupSlider = reviews => {
   const markup = reviews
-    .map(({ id, author, img, img_retina, text }) => {
+    .map(({ id, author, img, srcset, text }) => {
       return `
         <li class="reviews__item swiper-slide">
           <div class="reviews__author--wrapper">
             <img
-              srcset="
-                ${img}        1x,
-                ${img_retina} 2x
-              "
+              srcset="${srcset}"
               src="${img}"
               alt="Avatar of the author of the review number ${id}"
               width="40"
+              height="40"
             />
             <h3 class="reviews__author">${author}</h3>
           </div>
@@ -35,6 +33,7 @@ const renderMarkupSlider = reviews => {
 renderMarkupSlider(reviews);
 
 const swiper = new Swiper('.reviews__slider', {
+  loop: true,
   modules: [Pagination],
   slidesPerView: 1,
   spaceBetween: 24,
@@ -46,8 +45,8 @@ const swiper = new Swiper('.reviews__slider', {
     },
   },
   breakpoints: {
-    1280: {
+    1440: {
       slidesPerView: 4,
-    }
-  }
+    },
+  },
 });
