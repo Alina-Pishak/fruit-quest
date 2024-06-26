@@ -10,7 +10,7 @@ const renderMarkupSlider = gallery => {
     .map(({ src, srcset, alt }) => {
       return `
          <div class="swiper-slide gallery__swiper__slide">
-            <img src=${src} srcset=${srcset} alt=${alt} class="gallery__slide__img" />
+            <img src=${src} srcset=${srcset} alt=${alt} class="gallery__slide__img" width="288" height="500"/>
         </div>`;
     })
     .join('');
@@ -34,7 +34,7 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-custom-prev',
   },
   breakpoints: {
-    1280: {
+    1440: {
       slidesPerView: 4,
       spaceBetween: 24,
     },

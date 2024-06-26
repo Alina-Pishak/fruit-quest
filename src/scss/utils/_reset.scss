@@ -86,7 +86,7 @@ img {
   // Desktop
   @include media(desktop) {
     width: $desktop;
-    padding: 0 40px;
+    padding: 0 120px;
   }
 }
 
