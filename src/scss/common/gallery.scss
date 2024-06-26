@@ -12,9 +12,10 @@
   display: flex;
   justify-content: center;
   gap: 9px;
-  margin-top: 40px;
+  margin-top: 24px;
   @include media(desktop) {
     gap: 16px;
+    margin-top: 40px;
   }
 }
 

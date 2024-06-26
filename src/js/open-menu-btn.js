@@ -6,18 +6,41 @@ const mobileMenuLinks = Array.from(
 );
 const body = document.querySelector('body');
 
-const toggleMobileMenu = () => {
-  mobileMenu.classList.toggle('hidden');
-  body.classList.toggle('overflow-hidden');
+const openMenu = () => {
+  mobileMenu.classList.remove('hidden');
+  body.classList.add('overflow-hidden');
+  document.addEventListener('keydown', handleEscape);
+  body.addEventListener('click', handleBackground);
+  closeMenuBtn.addEventListener('click', closeMenu);
+  mobileMenu.addEventListener('click', handleLink);
 };
 
-openMenuBtn.addEventListener('click', toggleMobileMenu);
+const closeMenu = () => {
+  mobileMenu.classList.add('hidden');
+  body.classList.remove('overflow-hidden');
+  document.removeEventListener('keydown', handleEscape);
+  body.removeEventListener('click', handleBackground);
+  closeMenuBtn.removeEventListener('click', closeMenu);
+  mobileMenu.removeEventListener('click', handleLink);
+};
 
-closeMenuBtn.addEventListener('click', toggleMobileMenu);
+const handleEscape = event => {
+  if (event.key === 'Escape') {
+    closeMenu();
+  }
+};
 
-mobileMenu.addEventListener('click', e => {
+const handleLink = e => {
   const isLink = mobileMenuLinks.find(link => link === e.target);
   if (isLink) {
-    toggleMobileMenu();
+    closeMenu();
   }
-});
+};
+
+const handleBackground = e => {
+  if (!mobileMenu.contains(e.target) && !openMenuBtn.contains(e.target)) {
+    closeMenu();
+  }
+};
+
+openMenuBtn.addEventListener('click', openMenu);
