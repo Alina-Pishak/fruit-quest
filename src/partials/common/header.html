@@ -6,45 +6,88 @@
   </button>
   <a href="/" class="header__logo">
     <picture class="header__logo__img">
-      <source srcset="
+      <source
+        srcset="
           ../../img/logo-desktop_1x.webp 1x,
           ../../img/logo-desktop_2x.webp 2x
-        " media="(min-width: 1280px)" />
-      <source srcset="
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
           ../../img/logo-mobile_1x.webp 1x,
           ../../img/logo-mobile_2x.webp 2x
-        " media="(max-width: 1279px)" />
-      <img src="../../img/logo-mobile_1x.webp" alt="Game's logotype" class="header__logo__img" />
+        "
+        media="(max-width: 1439px)"
+      />
+      <img
+        src="../../img/logo-mobile_1x.webp"
+        alt="Game's logotype"
+        class="header__logo__img"
+        width="40"
+        height="40"
+      />
     </picture>
     <p class="header__logo__text">Fruit Quest: Match 3 Game</p>
   </a>
   <div class="header__navigation">
-    <load="../ui/navigation.html" />
+    <load ="../ui/navigation.html" />
   </div>
   <div id="mobile-menu" class="mobile__menu hidden">
-    <button type="button" id="close-menu-btn" class="mobile__menu__close__button header__button">
+    <button
+      type="button"
+      id="close-menu-btn"
+      class="mobile__menu__close__button header__button"
+    >
       <svg width="24" height="24" class="header__button__icon">
         <use href="/icons/symbol-defs.svg#icon-open-mobile-menu"></use>
       </svg>
     </button>
     <ul class="mobile__menu__nav__list">
       <li class="mobile__menu__nav__list__item">
-        <a id="mobile-menu-link" href="/" class="mobile__menu__nav__list__link">Home</a>
+        <a id="mobile-menu-link" href="/" class="mobile__menu__nav__list__link"
+          >Home</a
+        >
       </li>
       <li class="mobile__menu__nav__list__item">
-        <a id="mobile-menu-link" href="/#benefits" class="mobile__menu__nav__list__link">Benefits</a>
+        <a
+          id="mobile-menu-link"
+          href="/#benefits"
+          class="mobile__menu__nav__list__link"
+          >Benefits</a
+        >
       </li>
       <li class="mobile__menu__nav__list__item">
-        <a id="mobile-menu-link" href="/#gallery" class="mobile__menu__nav__list__link">Gallery</a>
+        <a
+          id="mobile-menu-link"
+          href="/#gallery"
+          class="mobile__menu__nav__list__link"
+          >Gallery</a
+        >
       </li>
       <li class="mobile__menu__nav__list__item">
-        <a id="mobile-menu-link" href="/#reviews" class="mobile__menu__nav__list__link">Reviews</a>
+        <a
+          id="mobile-menu-link"
+          href="/#reviews"
+          class="mobile__menu__nav__list__link"
+          >Reviews</a
+        >
       </li>
       <li class="mobile__menu__nav__list__item">
-        <a id="mobile-menu-link" href="/#about" class="mobile__menu__nav__list__link">About the game</a>
+        <a
+          id="mobile-menu-link"
+          href="/#about"
+          class="mobile__menu__nav__list__link"
+          >About the game</a
+        >
       </li>
       <li class="mobile__menu__nav__list__item">
-        <a id="mobile-menu-link" href="/#how-to-play" class="mobile__menu__nav__list__link">How to play</a>
+        <a
+          id="mobile-menu-link"
+          href="/#how-to-play"
+          class="mobile__menu__nav__list__link"
+          >How to play</a
+        >
       </li>
     </ul>
   </div>

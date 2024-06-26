@@ -24,7 +24,7 @@
   height: 5px;
   background-color: $hover_color;
   cursor: pointer;
-  transition: $transition;
+
   &:hover{
     background-color: $focus_color;
   }
@@ -34,7 +34,7 @@
 }
 
 .swiper-pagination-custom .swiper-pagination-bullet-active {
-  background-color: $focus_color;
+  background-color: $black-color;
 }
 
 .swiper-button-custom {
