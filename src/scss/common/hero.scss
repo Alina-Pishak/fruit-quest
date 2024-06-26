@@ -37,7 +37,7 @@
   font-size: 12px;
   text-align: center;
 
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 
   @include media(desktop) {
     font-size: 24px;
@@ -46,7 +46,14 @@
 }
 
 .hero__img {
+  width: 100%;
+  @include media(to-desktop) {
+    scale: 1.1;
+  }
+
   @include media(desktop) {
+    width: 588px;
+    height: 398px;
     margin-bottom: 18px;
   }
 }

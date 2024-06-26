@@ -6,7 +6,7 @@ import { Pagination } from 'swiper/modules';
 
 import reviews from '../data/reviews.json';
 
-const sliderEl = document.querySelector('.swiper-wrapper');
+const sliderEl = document.querySelector('.reviews__wrapper');
 
 const renderMarkupSlider = reviews => {
   const markup = reviews
