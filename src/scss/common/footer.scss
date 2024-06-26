@@ -58,6 +58,7 @@
 
 .footer__link {
   font-size: 12px;
+  transition: color $transition;
 
   &:hover {
     color: $hover_color;
