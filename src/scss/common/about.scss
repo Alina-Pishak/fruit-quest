@@ -1,0 +1,43 @@
+.about {
+  background: linear-gradient(90deg, #283bad 50%, #273692 100%);
+  padding-top: 70px;
+}
+
+.about__content {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.about__img {
+  width: 100%;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    width: 588px;
+    margin: 0;
+  }
+}
+
+.about_description {
+  @include media(desktop) {
+    width: 465px;
+    margin: auto 0;
+  }
+}
+
+.about_text {
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.about_link {
+  @include media(to-desktop) {
+    width: max-content;
+    margin: 0 auto;
+  }
+}
