@@ -22,8 +22,6 @@
 
 .header__button {
   background: none;
-  width: 24px;
-  height: 24px;
   border: none;
   fill: $text_color;
   transition: $transition;
@@ -40,6 +38,10 @@
 
 .header__button__icon {
   fill: inherit;
+  @include media(tablet) {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .header__logo {
@@ -56,6 +58,10 @@
   &:focus {
     color: $focus_color;
   }
+  @include media(tablet) {
+    gap: 20px;
+    width: 200px;
+  }
   @include media(desktop) {
     gap: 27px;
     width: 239px;
@@ -66,6 +72,9 @@
   width: 100%;
   height: auto;
   max-width: 40px;
+  @include media(tablet) {
+    max-width: 50px;
+  }
   @include media(desktop) {
     max-width: 64px;
   }
@@ -76,20 +85,27 @@
   font-size: 12px;
   letter-spacing: 0.01em;
   color: inherit;
+  @include media(tablet) {
+    font-size: 16px;
+  }
   @include media(desktop) {
     font-size: 18px;
   }
 }
 
-.mobile__menu__container{
-width: 320px;
-margin-left: auto;
-margin-right: auto;
+.mobile__menu__container {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  @include media(tablet) {
+    width: 768px;
+  }
 }
 
 .mobile__menu {
   background: $hover_color;
   position: fixed;
+  z-index: 1000;
   top: 0;
   opacity: 1;
   padding: 20px 16px 32px 16px;
@@ -99,6 +115,12 @@ margin-right: auto;
   align-items: start;
   transition: $transition;
   visibility: visible;
+  @include media(tablet) {
+    width: 270px;
+    gap: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .mobile__menu__close__button {
@@ -110,12 +132,20 @@ margin-right: auto;
 
 .mobile__menu__nav__list {
   width: 110px;
+  @include media(tablet) {
+    width: 140px;
+  }
 }
 
 .mobile__menu__nav__list__item:not(:last-child) {
   padding-bottom: 8px;
   border-bottom: 1px solid $text_color;
   margin-bottom: 8px;
+  @include media(tablet) {
+    padding-bottom: 14px;
+    border-bottom: 1px solid $text_color;
+    margin-bottom: 16px;
+  }
 }
 
 .mobile__menu__nav__list__link {
@@ -129,6 +159,9 @@ margin-right: auto;
   }
   &:focus {
     color: $bg_color;
+  }
+  @include media(tablet) {
+    font-size: 16px;
   }
 }
 
