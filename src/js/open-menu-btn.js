@@ -44,3 +44,17 @@ const handleBackground = e => {
 };
 
 openMenuBtn.addEventListener('click', openMenu);
+
+function setScrollBehavior() {
+  const currentPage = window.location.pathname;
+
+  const html = document.documentElement;
+
+  if (currentPage === '/' || currentPage === '/index.html') {
+    html.style.scrollBehavior = 'smooth';
+  } else {
+    html.style.scrollBehavior = 'auto';
+  }
+}
+
+window.onload = setScrollBehavior;
