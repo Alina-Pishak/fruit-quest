@@ -47,8 +47,8 @@
 
 .hero__img {
   width: 100%;
-  @include media(to-desktop) {
-    // scale: 1.1;
+  @include media(to-tablet) {
+    scale: 1.1;
   }
 
   @include media(desktop) {
