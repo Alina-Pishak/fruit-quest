@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -p"
   },
   "devDependencies": {
+    "netlify-cli": "^17.30.0",
     "glob": "^8.1.0",
     "sass": "^1.77.6",
     "sharp": "^0.33.4",
