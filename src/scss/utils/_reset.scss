@@ -28,7 +28,7 @@
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 *,
@@ -82,9 +82,10 @@ img {
   @include media(mobile) {
     width: $mobile;
   }
-@include media(tablet){
-  width: $tablet;
-}
+
+  @include media(tablet) {
+    width: $tablet;
+  }
   // Desktop
   @include media(desktop) {
     width: $desktop;

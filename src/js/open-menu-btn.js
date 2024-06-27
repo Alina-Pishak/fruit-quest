@@ -32,6 +32,9 @@ const handleEscape = event => {
 
 const handleLink = e => {
   const isLink = mobileMenuLinks.find(link => link === e.target);
+  if (document.body.id === 'home') {
+    document.documentElement.style.scrollBehavior = 'smooth';
+  }
   if (isLink) {
     closeMenu();
   }
