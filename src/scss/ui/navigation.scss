@@ -8,12 +8,15 @@
     column-gap: 60px;
     row-gap: 16px;
     flex-direction: column;
-    @include media(desktop) {
+    @include media(tablet) {
       width: unset;
       height: unset;
       display: flex;
-      row-gap: 40px;
+      column-gap: 35px;
       flex-direction: row;
+    }
+    @include media(desktop) {
+      column-gap: 40px;
     }
   }
   &__link {
@@ -27,6 +30,9 @@
     }
     &:focus {
       color: $focus_color;
+    }
+    @include media(tablet) {
+      font-size: 16px;
     }
     @include media(desktop) {
       font-size: 18px;

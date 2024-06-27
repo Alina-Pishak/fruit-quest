@@ -28,7 +28,7 @@
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 *,
@@ -83,6 +83,10 @@ img {
     width: $mobile;
   }
 
+  @include media(tablet) {
+    width: $tablet;
+    padding: 0 32px;
+  }
   // Desktop
   @include media(desktop) {
     width: $desktop;
@@ -112,6 +116,11 @@ img {
     &.title.show {
       opacity: 1;
       transform: translateX(0);
+    }
+
+    @include media(tablet) {
+      font-size: 34px;
+      margin-bottom: 50px;
     }
 
     // Desktop
