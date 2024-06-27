@@ -1,42 +1,42 @@
 [
   {
-    "srcset": "./img/screenshot-game-1_1x.webp 1x, ./img/screenshot-game-1_2x.webp 2x",
-    "src": "./img/screenshot-game-1_1x.webp",
+    "srcset": "/img/screenshot-game-1_1x.webp 1x, /img/screenshot-game-1_2x.webp 2x",
+    "src": "/img/screenshot-game-1_1x.webp",
     "alt": "Screenshot of game number 1"
   },
   {
-    "srcset": "./img/screenshot-game-2_1x.webp 1x, ./img/screenshot-game-2_2x.webp 2x",
-    "src": "./img/screenshot-game-2_1x.webp",
+    "srcset": "/img/screenshot-game-2_1x.webp 1x, /img/screenshot-game-2_2x.webp 2x",
+    "src": "/img/screenshot-game-2_1x.webp",
     "alt": "Screenshot of game number 2"
   },
   {
-    "srcset": "./img/screenshot-game-3_1x.webp 1x, ./img/screenshot-game-3_2x.webp 2x",
-    "src": "./img/screenshot-game-3_1x.webp",
+    "srcset": "/img/screenshot-game-3_1x.webp 1x, /img/screenshot-game-3_2x.webp 2x",
+    "src": "/img/screenshot-game-3_1x.webp",
     "alt": "Screenshot of game number 3"
   },
   {
-    "srcset": "./img/screenshot-game-4_1x.webp 1x, ./img/screenshot-game-4_2x.webp 2x",
-    "src": "./img/screenshot-game-4_1x.webp",
+    "srcset": "/img/screenshot-game-4_1x.webp 1x, /img/screenshot-game-4_2x.webp 2x",
+    "src": "/img/screenshot-game-4_1x.webp",
     "alt": "Screenshot of game number 4"
   },
   {
-    "srcset": "./img/screenshot-game-5_1x.webp 1x, ./img/screenshot-game-5_2x.webp 2x",
-    "src": "./img/screenshot-game-5_1x.webp",
+    "srcset": "/img/screenshot-game-5_1x.webp 1x, /img/screenshot-game-5_2x.webp 2x",
+    "src": "/img/screenshot-game-5_1x.webp",
     "alt": "Screenshot of game number 5"
   },
   {
-    "srcset": "./img/screenshot-game-6_1x.webp 1x, ./img/screenshot-game-6_2x.webp 2x",
-    "src": "./img/screenshot-game-6_1x.webp",
+    "srcset": "/img/screenshot-game-6_1x.webp 1x, /img/screenshot-game-6_2x.webp 2x",
+    "src": "/img/screenshot-game-6_1x.webp",
     "alt": "Screenshot of game number 6"
   },
   {
-    "srcset": "./img/screenshot-game-7_1x.webp 1x, ./img/screenshot-game-7_2x.webp 2x",
-    "src": "./img/screenshot-game-7_1x.webp",
+    "srcset": "/img/screenshot-game-7_1x.webp 1x, /img/screenshot-game-7_2x.webp 2x",
+    "src": "/img/screenshot-game-7_1x.webp",
     "alt": "Screenshot of game number 7"
   },
   {
-    "srcset": "./img/screenshot-game-8_1x.webp 1x, ./img/screenshot-game-8_2x.webp 2x",
-    "src": "./img/screenshot-game-8_1x.webp",
+    "srcset": "/img/screenshot-game-8_1x.webp 1x, /img/screenshot-game-8_2x.webp 2x",
+    "src": "/img/screenshot-game-8_1x.webp",
     "alt": "Screenshot of game number 8"
   }
 ]
