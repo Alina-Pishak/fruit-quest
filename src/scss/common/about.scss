@@ -13,7 +13,6 @@
 .about__img {
   width: 100%;
   margin-bottom: 40px;
-
   @include media(desktop) {
     width: 588px;
     margin: 0;
@@ -29,7 +28,9 @@
 
 .about_text {
   margin-bottom: 32px;
-
+  @include media(tablet) {
+    font-size: 22px;
+  }
   @include media(desktop) {
     font-size: 24px;
   }

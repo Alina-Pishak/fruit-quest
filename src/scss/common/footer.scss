@@ -23,7 +23,9 @@
 
     border: 1px solid $text_color;
     opacity: 0.3;
-
+    @include media(tablet) {
+      top: 70px;
+    }
     @include media(desktop) {
       top: 100px;
     }
@@ -36,13 +38,15 @@
 
 .footer__content {
   padding-top: 20px;
-
-  @include media(desktop) {
+  @include media(tablet) {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding-top: 40px;
+  }
+  @include media(desktop) {
+    justify-content: space-between;
   }
 }
 
@@ -67,7 +71,9 @@
   &:focus {
     color: $focus_color;
   }
-
+  @include media(tablet) {
+    font-size: 16px;
+  }
   @include media(desktop) {
     font-size: 18px;
   }
@@ -76,7 +82,9 @@
 .footer__license {
   font-size: 12px;
   text-align: center;
-
+  @include media(tablet) {
+    font-size: 16px;
+  }
   @include media(desktop) {
     font-size: 18px;
   }

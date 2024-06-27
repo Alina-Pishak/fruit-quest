@@ -45,6 +45,9 @@ const swiper = new Swiper('.reviews__slider', {
     },
   },
   breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
     1440: {
       slidesPerView: 4,
     },

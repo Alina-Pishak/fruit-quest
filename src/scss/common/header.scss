@@ -60,11 +60,10 @@
   }
   @include media(tablet) {
     gap: 20px;
-    width: 200px;
+        width: 239px;
   }
   @include media(desktop) {
     gap: 27px;
-    width: 239px;
   }
 }
 
@@ -73,7 +72,7 @@
   height: auto;
   max-width: 40px;
   @include media(tablet) {
-    max-width: 50px;
+    max-width: 60px;
   }
   @include media(desktop) {
     max-width: 64px;
@@ -85,10 +84,10 @@
   font-size: 12px;
   letter-spacing: 0.01em;
   color: inherit;
+  // @include media(tablet) {
+  //   font-size: 18px;
+  // }
   @include media(tablet) {
-    font-size: 16px;
-  }
-  @include media(desktop) {
     font-size: 18px;
   }
 }

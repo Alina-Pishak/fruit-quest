@@ -26,7 +26,7 @@
   background-color: $hover_color;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     background-color: $focus_color;
   }
   @include media(desktop) {
